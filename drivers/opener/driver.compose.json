@@ -1,0 +1,9 @@
+{
+  "name": {
+    "en": "Opener"
+  },
+  "capabilities": [
+    "locked"
+  ],
+  "$extends": "nuki"
+}

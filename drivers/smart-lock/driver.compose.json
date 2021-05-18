@@ -1,0 +1,19 @@
+{
+  "name": {
+    "en": "Smart Lock"
+  },
+  "capabilities": [
+    "locked",
+    "alarm_battery",
+    "alarm_contact"
+  ],
+  "capabilitiesOptions": {
+    "alarm_contact": {
+      "title": {
+        "en": "Door open",
+        "nl": "Deur open"
+      }
+    }
+  },
+  "$extends": "nuki"
+}

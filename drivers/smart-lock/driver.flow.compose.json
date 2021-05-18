@@ -1,0 +1,11 @@
+{
+  "actions": [
+    {
+      "id": "unlock_pull_latch",
+      "title": {
+        "en": "Unlock and pull the latch",
+        "nl": "Ontgrendel en houd de deurklink open"
+      }
+    }
+  ]
+}

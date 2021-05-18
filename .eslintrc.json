@@ -1,0 +1,7 @@
+{
+  "extends": "athom",
+  "rules": {
+    "max-len": "off",
+    "no-shadow": "off"
+  }
+}

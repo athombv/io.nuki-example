@@ -1,0 +1,25 @@
+{
+  "id": "io.nuki",
+  "version": "2.2.0",
+  "compatibility": ">=5.0.0",
+  "brandColor": "#000000",
+  "sdk": 3,
+  "name": {
+    "en": "Nuki"
+  },
+  "description": {
+    "en": "Keyless electronic door lock for smart access"
+  },
+  "category": [
+    "security"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Athom B.V.",
+    "email": "support@athom.com"
+  }
+}

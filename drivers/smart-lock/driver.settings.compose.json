@@ -1,0 +1,11 @@
+[
+  {
+    "id": "open_door",
+    "type": "checkbox",
+    "label": {
+      "en": "Open door when unlocking",
+      "nl": "Open deur bij het opendoen"
+    },
+    "value": true
+  }
+]

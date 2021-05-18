@@ -1,0 +1,30 @@
+{
+  "name": "io.nuki",
+  "version": "1.0.0",
+  "description": "Adds support for Nuki Smart Lock using the Nuki Bridge.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athombv/io.nuki.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/athombv/io.nuki/issues"
+  },
+  "homepage": "https://github.com/athombv/io.nuki#readme",
+  "dependencies": {
+    "homey-oauth2app": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-athom": "^2.1.0"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "io.nuki",
+  "version": "2.2.0",
+  "compatibility": ">=5.0.0",
+  "brandColor": "#000000",
+  "sdk": 3,
+  "name": {
+    "en": "Nuki"
+  },
+  "description": {
+    "en": "Keyless electronic door lock for smart access"
+  },
+  "category": [
+    "security"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Athom B.V.",
+    "email": "support@athom.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Opener"
+      },
+      "class": "lock",
+      "images": {
+        "large": "/drivers/opener/assets/images/large.png",
+        "small": "/drivers/opener/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "capabilities": [
+        "locked"
+      ],
+      "id": "opener"
+    },
+    {
+      "name": {
+        "en": "Smart Lock"
+      },
+      "class": "lock",
+      "images": {
+        "large": "/drivers/smart-lock/assets/images/large.png",
+        "small": "/drivers/smart-lock/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "capabilities": [
+        "locked",
+        "alarm_battery",
+        "alarm_contact"
+      ],
+      "capabilitiesOptions": {
+        "alarm_contact": {
+          "title": {
+            "en": "Door open",
+            "nl": "Deur open"
+          }
+        }
+      },
+      "id": "smart-lock",
+      "settings": [
+        {
+          "id": "open_door",
+          "type": "checkbox",
+          "label": {
+            "en": "Open door when unlocking",
+            "nl": "Open deur bij het opendoen"
+          },
+          "value": true
+        }
+      ]
+    }
+  ],
+  "flow": {
+    "actions": [
+      {
+        "id": "unlock_pull_latch",
+        "title": {
+          "en": "Unlock and pull the latch",
+          "nl": "Ontgrendel en houd de deurklink open"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=smart-lock"
+          }
+        ]
+      }
+    ]
+  }
+}
